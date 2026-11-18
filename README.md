@@ -23,6 +23,10 @@
 <a href="#-citation">Citation</a>
 </p>
 
+<a href="https://github.com/BaiCubed/PinPatch/raw/main/assets/pinpatch_promo.mp4"><img src="assets/video_poster.png" width="80%" alt="Watch the 1-minute PinPatch story"></a>
+
+<sub>🎬 A one-minute story: a small agent fails, asking the LLM is no better than random, PinPatch pins the faulty step and patches it.</sub>
+
 </div>
 
 ---
