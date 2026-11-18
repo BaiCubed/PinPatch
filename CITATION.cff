@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Learning from Failure without Self-Diagnosis: Self-Evolving Procedures for LLM Agents"
+abstract: "PinPatch: executable procedures induced from demonstrations, outcome-supervised hidden-state probes, and verified self-evolution of the procedure library for LLM agents."
+authors:
+  - name: "PinPatch authors"
+repository-code: "https://github.com/BaiCubed/PinPatch"
+url: "https://github.com/BaiCubed/PinPatch"
+license: MIT
+type: software
+version: 0.1.0
+date-released: "2026-11-19"
+keywords:
+  - LLM agents
+  - self-evolution
+  - procedures
+  - AgentGym

@@ -1,4 +1,4 @@
-import json, os, sys
+import json, sys
 from math import comb
 R = __import__('os').environ.get('PINPATCH_ROOT', __import__('os').path.abspath(__file__ + '/../../..')) + '/runs'
 def load(r):

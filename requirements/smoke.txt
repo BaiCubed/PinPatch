@@ -1,0 +1,8 @@
+# Minimal environment for the CPU smoke test (scripts/smoke_textcraft.sh) and the TextCraft learner/planner.
+# Versions are those of the environment used for the paper runs on TextCraft (Python 3.11).
+numpy==2.4.6
+gymnasium==1.4.0
+requests==2.34.2
+fastapi==0.163.1
+uvicorn==0.54.0
+pydantic==2.14.3

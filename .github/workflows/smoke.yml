@@ -1,0 +1,51 @@
+name: smoke test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  textcraft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      AGENTGYM_COMMIT: 3ef9235d23e68e7c2920c5422ad957dc8ced5c6c
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Python environment (envs/tc, as scripts/config.sh expects)
+        run: |
+          python -m venv envs/tc
+          envs/tc/bin/pip install -q -r requirements/smoke.txt
+
+      - name: AgentGym TextCraft environment (pinned commit, only agentenv-textcraft)
+        run: |
+          git init -q code/AgentGym
+          cd code/AgentGym
+          git remote add origin https://github.com/WooooDyy/AgentGym.git
+          git sparse-checkout set agentenv-textcraft
+          git fetch -q --depth 1 origin "$AGENTGYM_COMMIT"
+          git checkout -q FETCH_HEAD
+
+      - name: ADaPT TextCraft code and Minecraft 1.16.5 recipes (pinned, for the learner's imports)
+        run: PATH="$PWD/envs/tc/bin:$PATH" bash code/pinpatch-textcraft/setup.sh
+
+      - name: Smoke test (frozen TextCraft model, 5 test tasks, no LLM)
+        run: bash scripts/smoke_textcraft.sh
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: ruff (syntax errors and pyflakes; frozen directories excluded, see pyproject.toml)
+        run: |
+          pip install -q ruff==0.17.5
+          ruff check .

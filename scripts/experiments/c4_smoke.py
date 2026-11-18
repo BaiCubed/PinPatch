@@ -1,4 +1,4 @@
-import json, random, statistics, sys
+import random, statistics, sys
 from concurrent.futures import ThreadPoolExecutor
 sys.path.insert(0, __import__('os').environ.get('PINPATCH_ROOT', __import__('os').path.abspath(__file__ + '/../../..')) + '/code/eval')
 import evolve_x as X, repair

@@ -25,7 +25,7 @@ open(p, 'w').write(s.replace(a, b))
 PY
 touch textcraft/__init__.py
 cp mcassets/data/minecraft/recipes/*.json textcraft/recipes/
-n=$(ls textcraft/recipes | wc -l)
+n=$(ls textcraft/recipes | wc -l | tr -d " ")
 echo "recipes: $n (expected 860)"
 [ "$n" = "860" ] || { echo "unexpected recipe count"; exit 1; }
 python3 -c "import numpy" 2>/dev/null || pip install numpy

@@ -1,0 +1,17 @@
+[project]
+name = "pinpatch"
+version = "0.1.0"
+description = "Learning from Failure without Self-Diagnosis: Self-Evolving Procedures for LLM Agents"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 130
+target-version = "py310"
+# the frozen directories are the exact code behind the reported test numbers and are never edited
+extend-exclude = ["code/eval_frozen_*", "code/AgentGym", "code/MetaAct", "code/pinpatch-textcraft/third_party", "envs"]
+
+[tool.ruff.lint]
+# correctness only: syntax errors and pyflakes (undefined names, unused imports/variables); no style rewrites of research code
+select = ["E9", "F"]
