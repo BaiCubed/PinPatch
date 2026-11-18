@@ -23,7 +23,7 @@
 <a href="#-citation">Citation</a>
 </p>
 
-<a href="https://github.com/BaiCubed/PinPatch/raw/main/assets/pinpatch_play.mp4"><img src="assets/play_poster.png" width="80%" alt="Watch PinPatch: a little play about learning from failure"></a>
+<a href="https://github.com/BaiCubed/PinPatch/raw/main/assets/pinpatch_play.mp4"><img src="assets/play_highlights.gif" width="80%" alt="PinPatch, a little play: highlights"></a>
 
 <sub>🎭 <b>PinPatch, a little play</b> (2:46, with voices and <a href="assets/pinpatch_play.srt">subtitles</a>): Robo fails, Professor LLM's diagnosis is no better than random, Detective Pin finds the faulty step, Dr. Patch fixes it, then the real results.</sub>
 
