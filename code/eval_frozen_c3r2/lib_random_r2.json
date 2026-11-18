@@ -1,0 +1,274 @@
+{
+ "4143": {
+  "skip_plan": [
+   2
+  ]
+ },
+ "4180": {
+  "skip_plan": [
+   3
+  ]
+ },
+ "4168": {
+  "skip_plan": [
+   2
+  ]
+ },
+ "3741": {
+  "exclude": true
+ },
+ "3893": {
+  "exclude": true
+ },
+ "2939": {
+  "exclude": true
+ },
+ "3329": {
+  "exclude": true
+ },
+ "3634": {
+  "skip_plan": [
+   2
+  ]
+ },
+ "4492": {
+  "exclude": true
+ },
+ "4372": {
+  "exclude": true
+ },
+ "4375": {
+  "exclude": true
+ },
+ "992": {
+  "skip_plan": [
+   14
+  ]
+ },
+ "984": {
+  "skip_plan": [
+   4
+  ]
+ },
+ "668": {
+  "skip_plan": [
+   12
+  ]
+ },
+ "1114": {
+  "drop_sub": [
+   "D"
+  ]
+ },
+ "1330": {
+  "skip_plan": [
+   9
+  ]
+ },
+ "1163": {
+  "skip_plan": [
+   1,
+   4,
+   9
+  ]
+ },
+ "2282": {
+  "skip_plan": [
+   4
+  ]
+ },
+ "177": {
+  "skip_plan": [
+   10
+  ]
+ },
+ "4181": {
+  "skip_plan": [
+   4
+  ]
+ },
+ "4169": {
+  "exclude": true
+ },
+ "4171": {
+  "exclude": true
+ },
+ "4004": {
+  "exclude": true
+ },
+ "4027": {
+  "skip_plan": [
+   2
+  ]
+ },
+ "4024": {
+  "skip_plan": [
+   5
+  ]
+ },
+ "3999": {
+  "exclude": true
+ },
+ "3839": {
+  "exclude": true
+ },
+ "3303": {
+  "exclude": true
+ },
+ "3423": {
+  "exclude": true
+ },
+ "3441": {
+  "exclude": true
+ },
+ "2962": {
+  "exclude": true
+ },
+ "2952": {
+  "exclude": true
+ },
+ "3237": {
+  "exclude": true
+ },
+ "3143": {
+  "exclude": true
+ },
+ "3309": {
+  "exclude": true,
+  "skip_plan": [
+   1
+  ]
+ },
+ "3194": {
+  "exclude": true
+ },
+ "3394": {
+  "exclude": true
+ },
+ "3454": {
+  "exclude": true
+ },
+ "3614": {
+  "skip_plan": [
+   5
+  ]
+ },
+ "3539": {
+  "exclude": true
+ },
+ "908": {
+  "skip_plan": [
+   7
+  ]
+ },
+ "909": {
+  "exclude": true
+ },
+ "888": {
+  "skip_plan": [
+   8
+  ]
+ },
+ "778": {
+  "skip_plan": [
+   8
+  ]
+ },
+ "999": {
+  "exclude": true
+ },
+ "1005": {
+  "exclude": true
+ },
+ "932": {
+  "skip_plan": [
+   11
+  ]
+ },
+ "1178": {
+  "exclude": true,
+  "skip_plan": [
+   7
+  ]
+ },
+ "1204": {
+  "exclude": true
+ },
+ "1211": {
+  "drop_sub": [
+   "V"
+  ]
+ },
+ "1485": {
+  "exclude": true
+ },
+ "2185": {
+  "skip_plan": [
+   9
+  ]
+ },
+ "1980": {
+  "exclude": true
+ },
+ "2299": {
+  "skip_plan": [
+   10
+  ]
+ },
+ "2406": {
+  "exclude": true,
+  "skip_plan": [
+   9,
+   11
+  ]
+ },
+ "2415": {
+  "skip_plan": [
+   2
+  ]
+ },
+ "345": {
+  "drop_sub": [
+   "bedroom"
+  ]
+ },
+ "268": {
+  "skip_plan": [
+   3
+  ]
+ },
+ "548": {
+  "skip_plan": [
+   1
+  ]
+ },
+ "210": {
+  "skip_plan": [
+   11
+  ]
+ },
+ "1750": {},
+ "3104": {
+  "exclude": true,
+  "skip_plan": [
+   1
+  ]
+ },
+ "3022": {},
+ "3275": {
+  "exclude": true,
+  "skip_plan": [
+   2
+  ]
+ },
+ "3537": {
+  "drop_sub": [
+   "kitchen"
+  ]
+ },
+ "4042": {
+  "exclude": true
+ },
+ "3866": {},
+ "3933": {}
+}

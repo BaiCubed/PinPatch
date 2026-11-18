@@ -1,0 +1,31 @@
+{
+ "frozen_at": "2026-11-04 00:10:18",
+ "env": "textcraft (AgentGym official test, 100)",
+ "method": "MetaAct-RL",
+ "arm": "mem_analog_gated",
+ "model_dir": "runs/phase2_ag_base/merged",
+ "step_cap": 40,
+ "eval_seed": 0,
+ "PYTHONHASHSEED": 0,
+ "train_seeds": [
+  0,
+  1,
+  2,
+  3,
+  4
+ ],
+ "selection": "dev only (60/60 normal, 56/60 hidden-recipe)",
+ "code": {
+  "metaact-rl-textcraft": "67efdf780ba2ddae71333434fadf464301d38dac",
+  "eval": "ced392e6ec06f980f7ee2f9117107184cebeddfa"
+ },
+ "sha256": {
+  "model.pkl": "0f126ffb79b74824fb2d2f372d50691a52d4d69531784dd41c5cda11bf3c3c9c",
+  "agent.py": "1cbbcb2e60ad93c30837b58579e2e40f8b0113073dcea2371d4870d0057013d1",
+  "run.py": "61e82efdf8e1366d55db25d1c45e3d3ae58c50dad802276093ff5fab7fc77850",
+  "ag_run.py": "d5057612b54c9463329c1019d1cc053d4b07d32f42fa7c10ec23ec001e261711",
+  "run_eval.py": "f2e31c475ae265d81eaa2f53775e31def65720a4fb9bcacb872c95d96f091b9a",
+  "textcraft_split": "d6df0ac45b45c49a8eb42e6cd360ead7aafb2c7127f722a1a9336ac452240327"
+ },
+ "llm_calls": "none (arm has no LLM prior)"
+}

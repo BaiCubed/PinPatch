@@ -1,0 +1,25 @@
+# model weights and LLM caches
+models/
+*.safetensors
+*.bin
+*.gguf
+# run outputs: episode logs, summaries, servers' logs (artifacts/ holds the few learned files that are shipped)
+runs/
+*.jsonl
+!data/splits/*.jsonl
+# environments, downloaded data and third-party code (see README)
+envs/
+data/agentgym/
+data/alfworld/
+data/webshop/
+data/AgentTraj-L/
+code/AgentGym/
+code/MetaAct/
+code/pinpatch-textcraft/third_party/
+# caches
+__pycache__/
+*.pyc
+.cache/
+.ipynb_checkpoints/
+.DS_Store
+*.log

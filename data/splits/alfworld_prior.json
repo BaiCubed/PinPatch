@@ -1,0 +1,454 @@
+{
+ "procedures": {
+  "look_at_obj_in_light": "Search(obj) ; PickupObject(obj) ; GotoLocation(place:desklamp) ; ToggleObject(place:desklamp)",
+  "pick_and_place_simple": "Search(obj) ; PickupObject(obj) ; GotoLocation(target) ; PutObject(obj,target)",
+  "pick_clean_then_place_in_recep": "Search(obj) ; PickupObject(obj) ; GotoLocation(place:sinkbasin) ; CleanObject(obj) ; GotoLocation(target) ; PutObject(obj,target)",
+  "pick_cool_then_place_in_recep": "Search(obj) ; PickupObject(obj) ; GotoLocation(place:fridge) ; CoolObject(obj) ; GotoLocation(target) ; PutObject(obj,target)",
+  "pick_heat_then_place_in_recep": "Search(obj) ; PickupObject(obj) ; GotoLocation(place:microwave) ; HeatObject(obj) ; GotoLocation(target) ; PutObject(obj,target)",
+  "pick_two_obj_and_place": "Search(obj) ; PickupObject(obj) ; GotoLocation(target) ; PutObject(obj,target) ; Search(obj) ; PickupObject(obj) ; GotoLocation(target) ; PutObject(obj,target)"
+ },
+ "procedure_support": {
+  "look_at_obj_in_light": [
+   176,
+   191
+  ],
+  "pick_and_place_simple": [
+   645,
+   650
+  ],
+  "pick_clean_then_place_in_recep": [
+   430,
+   438
+  ],
+  "pick_cool_then_place_in_recep": [
+   384,
+   384
+  ],
+  "pick_heat_then_place_in_recep": [
+   312,
+   313
+  ],
+  "pick_two_obj_and_place": [
+   381,
+   384
+  ]
+ },
+ "where": {
+  "alarmclock": {
+   "desk": 15,
+   "sidetable": 13,
+   "shelf": 8,
+   "dresser": 6,
+   "desklamp": 1,
+   "diningtable": 1
+  },
+  "book": {
+   "bed": 35,
+   "desk": 32,
+   "dresser": 10,
+   "coffeetable": 6,
+   "armchair": 2,
+   "sidetable": 2,
+   "cabinet": 2,
+   "desklamp": 1
+  },
+  "bowl": {
+   "countertop": 26,
+   "diningtable": 19,
+   "cabinet": 16,
+   "desk": 10,
+   "shelf": 7,
+   "sidetable": 4,
+   "dresser": 2,
+   "fridge": 2,
+   "microwave": 2,
+   "bowl": 1,
+   "sinkbasin": 1
+  },
+  "box": {
+   "sofa": 3,
+   "box": 3,
+   "coffeetable": 3,
+   "diningtable": 3,
+   "sidetable": 2
+  },
+  "cd": {
+   "dresser": 21,
+   "desk": 16,
+   "diningtable": 9,
+   "sidetable": 8,
+   "drawer": 3,
+   "shelf": 2,
+   "desklamp": 2,
+   "cabinet": 2,
+   "garbagecan": 2,
+   "armchair": 1
+  },
+  "cellphone": {
+   "desk": 23,
+   "bed": 21,
+   "sidetable": 13,
+   "dresser": 10,
+   "shelf": 7,
+   "armchair": 3,
+   "coffeetable": 3,
+   "diningtable": 2,
+   "sofa": 1
+  },
+  "creditcard": {
+   "sidetable": 12,
+   "dresser": 9,
+   "coffeetable": 9,
+   "shelf": 8,
+   "creditcard": 6,
+   "sofa": 5,
+   "desk": 4,
+   "diningtable": 4,
+   "armchair": 3
+  },
+  "keychain": {
+   "sidetable": 14,
+   "coffeetable": 11,
+   "dresser": 9,
+   "shelf": 8,
+   "sofa": 7,
+   "armchair": 4,
+   "desklamp": 3,
+   "desk": 3,
+   "diningtable": 2,
+   "drawer": 1,
+   "keychain": 1
+  },
+  "laptop": {
+   "bed": 19,
+   "sofa": 7,
+   "diningtable": 6,
+   "coffeetable": 4,
+   "desk": 3,
+   "sidetable": 3,
+   "dresser": 2,
+   "countertop": 1,
+   "armchair": 1
+  },
+  "mug": {
+   "countertop": 60,
+   "coffeemachine": 44,
+   "cabinet": 17,
+   "diningtable": 13,
+   "fridge": 7,
+   "shelf": 6,
+   "desk": 5,
+   "sidetable": 5,
+   "sinkbasin": 5,
+   "dresser": 3,
+   "microwave": 2,
+   "mug": 2
+  },
+  "newspaper": {
+   "sofa": 13,
+   "coffeetable": 11,
+   "sidetable": 10,
+   "armchair": 9,
+   "dresser": 7,
+   "newspaper": 6,
+   "shelf": 4,
+   "diningtable": 4,
+   "ottoman": 1,
+   "desklamp": 1
+  },
+  "pen": {
+   "desk": 19,
+   "sidetable": 11,
+   "dresser": 9,
+   "diningtable": 6,
+   "shelf": 5,
+   "garbagecan": 3,
+   "coffeetable": 3,
+   "desklamp": 1
+  },
+  "pencil": {
+   "desk": 15,
+   "sidetable": 12,
+   "shelf": 8,
+   "dresser": 6,
+   "garbagecan": 3,
+   "desklamp": 2
+  },
+  "pillow": {
+   "bed": 43,
+   "sofa": 16,
+   "armchair": 6
+  },
+  "plate": {
+   "countertop": 27,
+   "diningtable": 17,
+   "cabinet": 14,
+   "fridge": 5,
+   "sidetable": 3,
+   "shelf": 3,
+   "sinkbasin": 3,
+   "desklamp": 1,
+   "coffeetable": 1,
+   "dresser": 1
+  },
+  "statue": {
+   "diningtable": 12,
+   "shelf": 8,
+   "sidetable": 5,
+   "coffeetable": 5,
+   "desk": 2,
+   "dresser": 2,
+   "statue": 1
+  },
+  "tissuebox": {
+   "countertop": 13,
+   "diningtable": 11,
+   "coffeetable": 4,
+   "sidetable": 2,
+   "drawer": 2,
+   "desklamp": 2,
+   "desk": 2,
+   "tissuebox": 1,
+   "toilet": 1
+  },
+  "vase": {
+   "dresser": 7,
+   "shelf": 6,
+   "sidetable": 3,
+   "vase": 3,
+   "coffeetable": 3,
+   "desk": 1,
+   "diningtable": 1,
+   "cabinet": 1
+  },
+  "watch": {
+   "diningtable": 8,
+   "sidetable": 6,
+   "watch": 5,
+   "shelf": 2,
+   "desklamp": 1,
+   "drawer": 1,
+   "dresser": 1
+  },
+  "bread": {
+   "countertop": 23,
+   "diningtable": 17,
+   "garbagecan": 1,
+   "microwave": 1,
+   "fridge": 1
+  },
+  "butterknife": {
+   "countertop": 12,
+   "diningtable": 6,
+   "butterknife": 1
+  },
+  "candle": {
+   "countertop": 44,
+   "toilet": 20,
+   "cabinet": 3,
+   "shelf": 2,
+   "sidetable": 1,
+   "candle": 1
+  },
+  "cloth": {
+   "bathtubbasin": 30,
+   "countertop": 25,
+   "cabinet": 16,
+   "sinkbasin": 12,
+   "toilet": 3,
+   "cart": 2,
+   "shelf": 1,
+   "cloth": 1,
+   "dresser": 1
+  },
+  "cup": {
+   "countertop": 40,
+   "cabinet": 17,
+   "diningtable": 10,
+   "sinkbasin": 9,
+   "microwave": 4,
+   "fridge": 4,
+   "shelf": 1,
+   "sidetable": 1,
+   "cup": 1
+  },
+  "dishsponge": {
+   "countertop": 14,
+   "bathtubbasin": 8,
+   "sinkbasin": 5,
+   "garbagecan": 3,
+   "toilet": 3,
+   "cabinet": 2,
+   "dishsponge": 1,
+   "shelf": 1
+  },
+  "egg": {
+   "countertop": 27,
+   "diningtable": 12,
+   "sinkbasin": 8,
+   "fridge": 6,
+   "microwave": 4,
+   "sidetable": 3,
+   "garbagecan": 2,
+   "egg": 1
+  },
+  "glassbottle": {
+   "diningtable": 3,
+   "countertop": 2,
+   "sinkbasin": 2,
+   "garbagecan": 1,
+   "cabinet": 1
+  },
+  "handtowel": {
+   "handtowelholder": 59,
+   "countertop": 3
+  },
+  "kettle": {
+   "countertop": 10,
+   "stoveburner": 6,
+   "cabinet": 2
+  },
+  "knife": {
+   "countertop": 9,
+   "diningtable": 8,
+   "sidetable": 2
+  },
+  "lettuce": {
+   "diningtable": 37,
+   "countertop": 27,
+   "sinkbasin": 3,
+   "sidetable": 2,
+   "garbagecan": 2,
+   "fridge": 1
+  },
+  "pan": {
+   "countertop": 27,
+   "stoveburner": 20,
+   "cabinet": 4
+  },
+  "peppershaker": {
+   "countertop": 19,
+   "diningtable": 13,
+   "cabinet": 8
+  },
+  "pot": {
+   "stoveburner": 22,
+   "countertop": 6,
+   "diningtable": 2,
+   "cabinet": 1,
+   "shelf": 1
+  },
+  "potato": {
+   "countertop": 49,
+   "diningtable": 23,
+   "fridge": 11,
+   "sinkbasin": 10,
+   "microwave": 7,
+   "garbagecan": 4,
+   "sidetable": 1
+  },
+  "remotecontrol": {
+   "coffeetable": 20,
+   "sofa": 10,
+   "remotecontrol": 9,
+   "sidetable": 6,
+   "armchair": 5,
+   "diningtable": 4,
+   "dresser": 2,
+   "shelf": 1
+  },
+  "saltshaker": {
+   "countertop": 11,
+   "cabinet": 5,
+   "diningtable": 4,
+   "sidetable": 1
+  },
+  "soapbar": {
+   "countertop": 34,
+   "toilet": 22,
+   "bathtubbasin": 15,
+   "sinkbasin": 15,
+   "garbagecan": 13,
+   "soapbar": 10,
+   "cabinet": 8,
+   "sidetable": 4,
+   "shelf": 2,
+   "cart": 2
+  },
+  "soapbottle": {
+   "countertop": 49,
+   "toilet": 24,
+   "cabinet": 11,
+   "garbagecan": 6,
+   "soapbottle": 4,
+   "shelf": 3,
+   "dresser": 2,
+   "sidetable": 1
+  },
+  "spoon": {
+   "countertop": 16,
+   "diningtable": 6,
+   "spoon": 4,
+   "sidetable": 3
+  },
+  "spraybottle": {
+   "countertop": 42,
+   "toilet": 28,
+   "garbagecan": 8,
+   "cabinet": 6,
+   "sidetable": 6,
+   "cart": 2,
+   "dresser": 1
+  },
+  "toiletpaper": {
+   "countertop": 26,
+   "toilet": 24,
+   "toiletpaperhanger": 15,
+   "garbagecan": 7,
+   "toiletpaper": 4,
+   "cabinet": 4,
+   "shelf": 3,
+   "sidetable": 1,
+   "dresser": 1
+  },
+  "tomato": {
+   "countertop": 51,
+   "diningtable": 21,
+   "fridge": 14,
+   "garbagecan": 9,
+   "sinkbasin": 8,
+   "sidetable": 3,
+   "tomato": 1
+  },
+  "winebottle": {
+   "countertop": 5,
+   "diningtable": 5,
+   "garbagecan": 3,
+   "cabinet": 2
+  },
+  "apple": {
+   "countertop": 32,
+   "diningtable": 17,
+   "microwave": 7,
+   "fridge": 4,
+   "garbagecan": 4,
+   "sidetable": 3,
+   "sinkbasin": 2,
+   "apple": 1
+  },
+  "fork": {
+   "diningtable": 10,
+   "countertop": 6,
+   "sidetable": 1
+  },
+  "ladle": {
+   "countertop": 23,
+   "cabinet": 6,
+   "diningtable": 4
+  },
+  "spatula": {
+   "countertop": 12,
+   "diningtable": 5
+  }
+ }
+}
