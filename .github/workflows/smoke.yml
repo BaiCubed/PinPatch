@@ -45,7 +45,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: ruff (syntax errors and pyflakes; frozen directories excluded, see pyproject.toml)
+      - name: ruff (syntax errors and undefined names; frozen directories excluded, see pyproject.toml)
         run: |
           pip install -q ruff==0.17.5
           ruff check .
