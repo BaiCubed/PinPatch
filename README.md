@@ -4,8 +4,6 @@
 
 <h3>Learning from Failure without Self-Diagnosis:<br>Self-Evolving Procedures for LLM Agents</h3>
 
-<p><i>Authors (to be added)</i></p>
-
 <p>
 <a href="#"><img alt="Paper" src="https://img.shields.io/badge/arXiv-coming_soon-b31b1b?style=for-the-badge&logo=arxiv&logoColor=white"></a>
 <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-6C63D9?style=for-the-badge"></a>
