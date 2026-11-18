@@ -11,6 +11,7 @@
 <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-6C63D9?style=for-the-badge"></a>
 <img alt="Python" src="https://img.shields.io/badge/Python-3.10%20%7C%203.11-4A6FA5?style=for-the-badge&logo=python&logoColor=white">
 <img alt="AgentGym" src="https://img.shields.io/badge/AgentGym-4_environments-2A9D8F?style=for-the-badge">
+<a href="https://github.com/BaiCubed/PinPatch/actions/workflows/smoke.yml"><img alt="smoke test" src="https://img.shields.io/github/actions/workflow/status/BaiCubed/PinPatch/smoke.yml?branch=main&label=smoke%20test&style=for-the-badge&logo=githubactions&logoColor=white"></a>
 </p>
 
 <p>
