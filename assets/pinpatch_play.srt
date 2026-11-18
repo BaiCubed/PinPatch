@@ -1,0 +1,112 @@
+1
+00:00:01,450 --> 00:00:04,700
+Narrator: PinPatch. A little play about learning from failure.
+
+2
+00:00:08,950 --> 00:00:13,757
+Narrator: Meet Robo. A small, seven billion parameter robot, with a big job.
+
+3
+00:00:14,407 --> 00:00:17,054
+Robo: Today's task: measure the temperature of the water!
+
+4
+00:00:17,604 --> 00:00:21,621
+Robo: Go to the kitchen. Pick up the water. Focus on... the flower pot?
+
+5
+00:00:23,271 --> 00:00:26,127
+Narrator: One wrong step, and the whole episode fails.
+
+6
+00:00:26,677 --> 00:00:28,210
+Robo: Oh no. What went wrong?
+
+7
+00:00:31,660 --> 00:00:34,748
+Professor LLM: Ahem! Let me diagnose you, young robot.
+
+8
+00:00:35,498 --> 00:00:37,936
+Professor LLM: Clearly, you should... be more careful!
+
+9
+00:00:39,186 --> 00:00:42,553
+Robo: But... which step? Maybe step four? Or step one?
+
+10
+00:00:44,203 --> 00:00:49,404
+Narrator: Asked to judge its own failure, a small model just guesses. No better than random.
+
+11
+00:00:52,854 --> 00:00:56,918
+Detective Pin: Allow me. I don't ask for opinions. I read the evidence.
+
+12
+00:00:57,568 --> 00:01:02,909
+Narrator: Detective Pin reads Robo's hidden state, trained only on whether episodes succeed or fail.
+
+13
+00:01:03,759 --> 00:01:06,150
+Detective Pin: Here. Step three. The focus.
+
+14
+00:01:10,000 --> 00:01:11,556
+Dr. Patch: A small patch should do it.
+
+15
+00:01:13,006 --> 00:01:15,026
+Dr. Patch: Now, let's rehearse it once more.
+
+16
+00:01:16,876 --> 00:01:20,545
+Dr. Patch: It works, and nothing else broke. Into the library it goes!
+
+17
+00:01:22,195 --> 00:01:25,121
+Narrator: No lessons written. Only fixes that work.
+
+18
+00:01:28,371 --> 00:01:31,064
+Robo: Kitchen. Water. Which cup, Professor?
+
+19
+00:01:31,514 --> 00:01:32,490
+Professor LLM: The glass one!
+
+20
+00:01:33,540 --> 00:01:36,210
+The Guard: Stop right there. Not the flower pot.
+
+21
+00:01:36,860 --> 00:01:39,043
+Robo: Thanks! Reading the thermometer... done!
+
+22
+00:01:40,493 --> 00:01:46,066
+Narrator: Most steps need no LLM at all, and a guard reading the same hidden state blocks fatal moves.
+
+23
+00:01:49,316 --> 00:01:53,426
+Narrator: Thank you for watching our little play. Now, the real results.
+
+24
+00:01:58,476 --> 00:02:10,387
+Narrator: On four AgentGym environments, with the same seven billion parameter model, PinPatch outperforms thirteen prompting agents, and a model fine-tuned on eight thousand six hundred expert trajectories.
+
+25
+00:02:11,837 --> 00:02:17,526
+Narrator: It needs just four point eight LLM calls per episode. About a quarter of the fine-tuned model.
+
+26
+00:02:18,776 --> 00:02:27,786
+Narrator: When the LLM diagnoses its own failures, it is no better than random. PinPatch's outcome-supervised credit finds the fix in fewer tries.
+
+27
+00:02:29,036 --> 00:02:33,053
+Narrator: And it holds across five model families, with nothing retuned.
+
+28
+00:02:36,903 --> 00:02:42,522
+Narrator: PinPatch. Learning from failure, without self-diagnosis. The code is on GitHub.
+
